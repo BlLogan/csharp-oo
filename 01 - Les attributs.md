@@ -68,15 +68,20 @@ Créez une classe ```Personne``` avec les attributs ```Nom```, ```Age``` et ```A
 	<summary>Solution</summary>
 
 ```csharp
-class Personne {
-    string Nom = "Dupont";
-    int Age = 20;
-    string Adresse = "1 rue de la paix";
+class Personne
+{
+    string Nom = "Maxwell";
+    int Age = 19;
+    string Adresse = "rue de la paix 7";
+
+    public static void Main()
+    {
+        Personne p = new Personne();
+        Console.WriteLine(p.Nom);
+        Console.WriteLine(p.Age);
+        Console.WriteLine(p.Adresse);
+    }
 }
-Personne p = new Personne();
-Console.WriteLine(p.Nom);
-Console.WriteLine(p.Age);
-Console.WriteLine(p.Adresse);
 ```
 
 </details>
